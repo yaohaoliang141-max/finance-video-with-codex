@@ -1,0 +1,18 @@
+{
+  "name": "subtitle-synced-finance-video-plugin",
+  "version": "0.1.0",
+  "description": "使用 HyperFrames 制作字幕严格同步、带章节系统的财经 MG 视频。",
+  "author": {
+    "name": "18498"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "字幕强同步财经视频",
+    "shortDescription": "用 HyperFrames 自动制作字幕强同步财经 MG 视频",
+    "longDescription": "根据原视频、稿件或字幕自动生成财经纪录片风格视频；严格遵循字幕触发 MG、强语义匹配、镜像退出、半透明图表、版式多样化、章节进度条和章节开场动画规范。",
+    "developerName": "18498",
+    "category": "Productivity",
+    "capabilities": ["video-production", "hyperframes", "subtitle-sync", "motion-graphics"],
+    "defaultPrompt": "请使用字幕强同步财经视频 Skill，根据我提供的视频、稿子或字幕直接制作成片。"
+  }
+}
