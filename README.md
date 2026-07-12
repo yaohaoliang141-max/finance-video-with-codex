@@ -63,36 +63,42 @@ MP4 渲染与抽帧复核
 
 ```text
 .
-├── .codex-plugin/
-│   └── plugin.json
-├── skills/
-│   └── subtitle-synced-finance-video/
-│       ├── SKILL.md
-│       ├── agents/openai.yaml
-│       ├── assets/
-│       └── references/production-rules.md
+├── .agents/plugins/marketplace.json
+├── plugins/
+│   └── subtitle-synced-finance-video-plugin/
+│       ├── .codex-plugin/plugin.json
+│       └── skills/subtitle-synced-finance-video/
+│           ├── SKILL.md
+│           ├── agents/openai.yaml
+│           ├── assets/
+│           └── references/production-rules.md
 └── docs/images/
 ```
 
 ## 安装
 
-### 从 Codex 插件界面安装
-
-在 Codex 的插件页面选择从 GitHub 仓库添加插件，并使用：
-
-```text
-https://github.com/yaohaoliang141-max/finance-video-with-codex
-```
-
-插件依赖 HyperFrames。首次使用前，请确认 Codex 中已经安装并启用 HyperFrames 插件。
-
-### 本地开发安装
+### 通过 Marketplace 安装
 
 ```bash
 git clone https://github.com/yaohaoliang141-max/finance-video-with-codex.git
+cd finance-video-with-codex
+codex plugin marketplace add .
+codex plugin add subtitle-synced-finance-video-plugin@finance-video-with-codex
 ```
 
-将仓库作为本地 Codex 插件载入，重新打开 Codex 或开启新任务后即可调用其中的 Skill。
+安装完成后，重新打开 Codex 或开启新任务，使 Codex 加载插件中的 Skill。
+
+> 插件依赖 HyperFrames。首次使用前，请先在 Codex 插件目录中安装并启用 HyperFrames；本仓库不会捆绑或自动下载第三方 HyperFrames 插件。
+
+### 仅安装 Skill
+
+如果当前 Codex 环境不支持插件 Marketplace，也可以把下面的目录复制到个人 Skills 目录：
+
+```text
+plugins/subtitle-synced-finance-video-plugin/skills/subtitle-synced-finance-video
+```
+
+Windows 默认目标位置为 `%USERPROFILE%\.codex\skills\`。复制后重新打开 Codex 或开启新任务。
 
 ## 使用方式
 

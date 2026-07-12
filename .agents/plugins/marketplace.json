@@ -1,0 +1,20 @@
+{
+  "name": "finance-video-with-codex",
+  "interface": {
+    "displayName": "财经视频制作基于 Codex"
+  },
+  "plugins": [
+    {
+      "name": "subtitle-synced-finance-video-plugin",
+      "source": {
+        "source": "local",
+        "path": "./plugins/subtitle-synced-finance-video-plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
