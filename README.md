@@ -1,4 +1,4 @@
-# 财经视频制作基于 Codex
+# Finance Video with Codex (财经视频制作基于 Codex)
 
 一个面向中文财经内容创作者的 Codex 视频制作插件。它以 **HyperFrames + GSAP** 为渲染基础，把原始视频、口播稿或字幕制作成具有财经纪录片质感的 MG 动画视频。
 
